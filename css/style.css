@@ -19,6 +19,18 @@
   | Global 
   |============================
 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .link {
   text-decoration: none;
@@ -35,8 +47,7 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 ul,
@@ -52,16 +63,55 @@ img {
   height: auto;
 }
 
-.container {
-  margin: 0 auto;
-  width: 1158px;
-  padding: 0 15px;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--main-white);
   color: var(--main-textcolor);
+}
+
+/**
+  |============================
+  | Base style
+  |============================
+*/
+
+.section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media only screen and (min-width: 1158px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+/* Base style for small device */
+.container {
+  max-width: 428px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+/* Tablet screen */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+/* Desktop screen */
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
 }
 
 /**
@@ -222,58 +272,65 @@ body {
   |============================
 */
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.benefits-title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
 }
 
-.advantages-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--main-brandcolor);
-  margin-bottom: 8px;
+@media only screen and (min-width: 1158px) {
+  .benefits-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
 }
 
-.advantages-text {
+.benefits-text {
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-weight: 500;
+  letter-spacing: 0.32px;
 }
 
-.advantages .list {
+@media only screen and (min-width: 1158px) {
+  .benefits-text {
+    font-weight: 400;
+  }
+}
+
+/* .icon-benefits {
+  display: none;
+}
+.icon-benefits-container {
+  display: none;
+} */
+
+/* .benefits-list {
   display: flex;
   gap: 24px;
 }
 
-.advantages-item:last-child {
+.benefits-item:last-child {
   margin-right: 0;
 }
 
-.list .advantages-item {
+.benefits-item {
   width: calc((100%-72px) / 4);
 }
 
-.advantages {
-  padding: 120px 0;
-}
-
-.icon-advantage {
+.icon-benefits {
   display: inline-block;
   width: 64px;
   height: 64px;
 }
 
-.icon-advantages-container {
+.icon-benefits-container {
   display: flex;
   border-radius: 4px;
   justify-content: center;
@@ -281,7 +338,7 @@ body {
   background-color: var(--main-backgroundcolor);
   margin-bottom: 8px;
   height: 112px;
-}
+} */
 
 /**
   |============================
@@ -289,6 +346,15 @@ body {
   |============================
 */
 
+.examples {
+  display: none;
+}
+
+@media only screen and (min-width: 1158px) {
+  .examples {
+    display: contents;
+  }
+}
 .second-title {
   font-weight: 700;
   font-size: 36px;
@@ -300,11 +366,7 @@ body {
   padding-bottom: 72px;
 }
 
-.examples {
-  padding-bottom: 120px;
-}
-
-.examples .list {
+.example-list {
   display: flex;
   gap: 24px;
 }
@@ -322,8 +384,7 @@ body {
   | About-team section
   |============================
 */
-
-.about-team {
+.about-team .about-team {
   background-color: var(--main-backgroundcolor);
 }
 
@@ -497,16 +558,16 @@ body {
   margin-bottom: 16px;
 }
 
-.footer-area .container {
+/* .footer-area-container {
   display: flex;
   align-items: baseline;
-}
+} */
 
 .logo-text-container {
   margin-right: 120px;
 }
 
-.footer-area .list {
+.footer-area-list {
   display: flex;
   gap: 16px;
 }
