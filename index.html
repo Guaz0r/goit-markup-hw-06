@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="webstudio" content="about company webstudio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>homework6</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,15 +46,15 @@
     </header> -->
 
     <main>
-      <!--Hero section-->
-      <!-- <section class="main-hero">
+      <!-- Hero section-->
+      <section class="main-hero">
         <div class="container">
           <h1 class="main-slogan">Effective Solutions for Your Business</h1>
           <button class="order-button" type="button" data-modal-open>Order Service</button>
         </div>
-      </section> -->
+      </section>
       <!-- Benefits section-->
-      <section class="benefits section">
+      <section class="benefits">
         <div class="container">
           <h2 class="visually-hidden">Special features.</h2>
           <ul class="benefits-list list">
@@ -108,8 +109,8 @@
           </ul>
         </div>
       </section>
-      <!--Examples section-->
-      <!-- <section class="examples section">
+      <!-- Examples section-->
+      <section class="examples">
         <div class="container">
           <h2 class="second-title">What are we doing</h2>
           <ul class="example-list list">
@@ -132,18 +133,18 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!--About-team section-->
-      <!-- <section class="about-team section">
+      </section>
+      <!-- About-team section-->
+      <section class="about-team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
-          <ul class="list">
+          <ul class="about-team-container list">
             <li class="team-members">
               <img src="./images/mark_guerrero.jpg" alt="Mark Guerrero" width="264" height="260" />
               <div class="member-container">
                 <h3 class="members-name">Mark Guerrero</h3>
                 <p class="members-position">Product Designer</p>
-                <ul class="list">
+                <ul class="about-team-list list">
                   <li class="member-icon">
                     <a class="member-social" href="https://www.instagram.com/" target="_blank">
                       <svg width="16" height="16" class="team-icon">
@@ -180,7 +181,7 @@
               <div class="member-container">
                 <h3 class="members-name">Tom Ford</h3>
                 <p class="members-position">Frontend Developer</p>
-                <ul class="list">
+                <ul class="about-team-list list">
                   <li class="member-icon">
                     <a class="member-social" href="https://www.instagram.com/" target="_blank">
                       <svg width="16" height="16" class="team-icon">
@@ -217,7 +218,7 @@
               <div class="member-container">
                 <h3 class="members-name">Camila Garcia</h3>
                 <p class="members-position">Marketing</p>
-                <ul class="list">
+                <ul class="about-team-list list">
                   <li class="member-icon">
                     <a class="member-social" href="https://www.instagram.com/" target="_blank">
                       <svg width="16" height="16" class="team-icon">
@@ -254,7 +255,7 @@
               <div class="member-container">
                 <h3 class="members-name">Daniel Wilson</h3>
                 <p class="members-position">UI Designer</p>
-                <ul class="list">
+                <ul class="about-team-list list">
                   <li class="member-icon">
                     <a class="member-social" href="https://www.instagram.com/" target="_blank">
                       <svg width="16" height="16" class="team-icon">
@@ -288,12 +289,12 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Customers section -->
-      <!-- <section class="customers-section section">
+      <section class="customers-section">
         <div class="container">
           <h2 class="team-title">Customers</h2>
-          <ul class="list">
+          <ul class="customers-list list">
             <li class="customers-item">
               <a class="customers-point" href="">
                 <svg width="104" height="56" class="point-icon">
@@ -338,10 +339,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Footer -->
-    <!-- <footer class="footer-area section">
+    <footer class="footer-area">
       <div class="footer-area-container container">
         <div class="logo-text-container">
           <a class="logo-footer logo-web link" href="./index.html"
@@ -352,7 +353,7 @@
             solutions.
           </p>
         </div>
-        <div class="logo-text-container">
+        <div class="box-footer-links">
           <p class="footer-media">Social media</p>
           <ul class="footer-area-list list">
             <li class="icon-footer">
@@ -404,9 +405,10 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <!-- Modal menu -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button-close" type="button" data-modal-close>
           <svg class="close-button" width="8" height="8">
@@ -475,69 +477,17 @@
           <button class="btn-modal-send" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <!-- Mobile menu -->
-    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24">
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu">
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link link" href="">Studio</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link link" href="">Portfolio</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link link" href="">Contacts</a>
-        </li>
-      </ul>
-
-      <ul class="mobile-networks">
-        <li class="mobile-networks-item">
-          <a
-            class="mobile-networks-link"
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer">
-            <svg class="mobile-networks-icon" width="24" height="24">
-              <use href="./images/icons.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mobile-networks-item">
-          <a
-            class="mobile-networks-link"
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer">
-            <svg class="mobile-networks-icon" width="24" height="24">
-              <use href="./images/icons.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div> -->
 
     <!-- Scripts -->
-    <!-- <script
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"></script>
     <script src="./scripts/modal.js"></script>
-    <script defer src="./js/mobile-menu.js"></script> -->
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
