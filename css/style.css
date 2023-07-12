@@ -739,7 +739,8 @@ body {
 
 .footer-subscribe-box {
   text-align: center;
-  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .subscribe-text {
@@ -840,9 +841,9 @@ body {
   }
 
   .footer-subscribe-box {
-    margin: 0;
     text-align: left;
     margin-left: 90px;
+    padding: 0;
   }
 
   .subscribe-footer {
