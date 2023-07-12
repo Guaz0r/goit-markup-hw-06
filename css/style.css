@@ -123,11 +123,6 @@ body {
     0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.header-top {
-  display: flex;
-  align-items: center;
-}
-
 .navigation {
   display: flex;
   align-items: center;
@@ -184,6 +179,11 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .header-top {
+    display: flex;
+    align-items: center;
+  }
+
   .logo-web-header {
     margin-right: 120px;
   }
@@ -1204,13 +1204,13 @@ body {
   align-items: center;
   justify-content: center;
   margin-left: auto;
-  padding: 0;
+  /* padding: 0; */
   background-color: transparent;
   cursor: pointer;
   border: none;
   outline: none;
   padding: 24px 0;
-  margin-left: 249px;
+  /* margin-left: 249px; */
 }
 
 @media (min-width: 768px) {
